@@ -7,7 +7,7 @@ import os
 import time
 
 
-@pytest.fixture(scope="class")
+@pytest.fixture(scope="function")
 def setup(request, browser="chrome"):
     """Fixture to setup the WebDriver for tests"""
 

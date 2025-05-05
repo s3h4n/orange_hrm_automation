@@ -7,9 +7,9 @@ class DashboardPage(BasePage):
 
     # Locators
     DASHBOARD_HEADER = (By.XPATH, "//h6[text()='Dashboard']")
-    USER_DROPDOWN = (By.CLASS_NAME, "oxd-userdropdown-tab")
-    LOGOUT_OPTION = (By.XPATH, "//a[contains(text(), 'Logout')]")
-    QUICK_LAUNCH_LEAVE = (By.XPATH, "//p[text()='My Leave']")
+    USER_DROPDOWN = (By.XPATH, "//p[@class='oxd-userdropdown-name']")
+    LOGOUT_OPTION = (By.XPATH,  "//a[text()='Logout']")
+    QUICK_LAUNCH_LEAVE = (By.XPATH, "//button[@title='My Leave']")
 
     # Page title
     DASHBOARD_PAGE_TITLE = "OrangeHRM"

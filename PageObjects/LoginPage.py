@@ -8,8 +8,8 @@ class LoginPage(BasePage):
     # Locators
     USERNAME_INPUT = (By.NAME, "username")
     PASSWORD_INPUT = (By.NAME, "password")
-    LOGIN_BUTTON = (By.XPATH, "//button[@type='submit']")
-    LOGIN_PAGE_HEADER = (By.XPATH, "//h5[contains(text(), 'Login')]")
+    LOGIN_BUTTON = (By.XPATH, "//*[@id='app']/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button")
+    LOGIN_PAGE_HEADER = (By.XPATH, "//h5[text()='Login']")
 
     # Page title
     LOGIN_PAGE_TITLE = "OrangeHRM"

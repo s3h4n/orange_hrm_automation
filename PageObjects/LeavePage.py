@@ -6,9 +6,9 @@ class LeavePage(BasePage):
     """Page Object for the Leave Page"""
 
     # Locators
-    LEAVE_HEADER = (By.XPATH, "//h6[contains(text(), 'Leave')]")
+    LEAVE_HEADER = (By.XPATH, "//h6[@class='oxd-text oxd-text--h6 oxd-topbar-header-breadcrumb-module' and text()='Leave']")
     STATUS_DROPDOWN = (
-    By.XPATH, "//label[contains(text(), 'Show Leave with Status')]/following::div[contains(@class, 'oxd-select-text')]")
+    By.XPATH,  "//span[text()='Leave']/parent::a" )
     SEARCH_BUTTON = (By.XPATH, "//button[@type='submit']")
 
     # Page title
