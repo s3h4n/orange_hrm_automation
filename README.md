@@ -65,12 +65,6 @@ To run tests and generate HTML report:
 pytest -v TestCases/test_orange_hrm.py --html=Reports/report.html
 ```
 
-To run tests in parallel:
-
-```
-pytest -v TestCases/test_orange_hrm.py -n=2
-```
-
 To run tests with Allure reports:
 
 ```
